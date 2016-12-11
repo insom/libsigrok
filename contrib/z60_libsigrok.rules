@@ -25,6 +25,14 @@
 ACTION!="add|change", GOTO="libsigrok_rules_end"
 SUBSYSTEM!="usb|usbmisc|usb_device", GOTO="libsigrok_rules_end"
 
+# Agilent USBTMC-connected devices
+# 34405A
+ATTRS{idVendor}=="0957", ATTRS{idProduct}=="0618", MODE="664", GROUP="plugdev"
+# 34410A
+ATTRS{idVendor}=="0957", ATTRS{idProduct}=="0607", MODE="664", GROUP="plugdev"
+# DSO1000 series
+ATTRS{idVendor}=="0957", ATTRS{idProduct}=="0588", MODE="664", GROUP="plugdev"
+
 # ASIX SIGMA
 # ASIX SIGMA2
 ATTRS{idVendor}=="a600", ATTRS{idProduct}=="a000", MODE="664", GROUP="plugdev"
@@ -66,6 +74,9 @@ ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", MODE="664", GROUP="plugdev"
 
 # Dangerous Prototypes Buspirate (v4)
 ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="fb00", MODE="664", GROUP="plugdev"
+
+# DreamSourceLab DSLogic
+ATTRS{idVendor}=="2a0e", ATTRS{idProduct}=="0001", MODE="664", GROUP="plugdev"
 
 # Hantek DSO-2090
 # lsusb: "04b4:2090 Cypress Semiconductor Corp."
@@ -111,6 +122,10 @@ ATTRS{idVendor}=="1041", ATTRS{idProduct}=="8101", MODE="664", GROUP="plugdev"
 # This is actually the generic SiLabs (Cygnal) F32x USBXpress VID:PID.
 ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="0002", MODE="664", GROUP="plugdev"
 
+# LeCroy LogicStudio16
+ATTRS{idVendor}=="05ff", ATTRS{idProduct}=="a001", MODE="664", GROUP="plugdev"
+ATTRS{idVendor}=="05ff", ATTRS{idProduct}=="a002", MODE="664", GROUP="plugdev"
+
 # Link Instruments MSO-19
 ATTRS{idVendor}=="3195", ATTRS{idProduct}=="f190", MODE="664", GROUP="plugdev"
 
@@ -131,14 +146,14 @@ ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="000a", MODE="664", GROUP="plugdev"
 # Rigol DS1000 series
 ATTRS{idVendor}=="1ab1", ATTRS{idProduct}=="0588", MODE="664", GROUP="plugdev"
 
+# Rigol 1000Z series
+ATTRS{idVendor}=="1ab1", ATTRS{idProduct}=="04ce", MODE="664", GROUP="plugdev"
+
 # Rigol DS2000 series
 ATTRS{idVendor}=="1ab1", ATTRS{idProduct}=="04b0", MODE="664", GROUP="plugdev"
 
 # Rigol DG4000 series
 ATTRS{idVendor}=="1ab1", ATTRS{idProduct}=="0641", MODE="664", GROUP="plugdev"
-
-# Agilent DSO1000 series
-ATTRS{idVendor}=="0957", ATTRS{idProduct}=="0588", MODE="664", GROUP="plugdev"
 
 # Saleae Logic
 # EE Electronics ESLA100 (clone of the Saleae Logic)
@@ -150,8 +165,20 @@ ATTRS{idVendor}=="0925", ATTRS{idProduct}=="3881", MODE="664", GROUP="plugdev"
 # Saleae Logic16
 ATTRS{idVendor}=="21a9", ATTRS{idProduct}=="1001", MODE="664", GROUP="plugdev"
 
+# sigrok FX2 LA (8ch)
+ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="608c", MODE="664", GROUP="plugdev"
+
+# sigrok FX2 LA (16ch)
+ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="608d", MODE="664", GROUP="plugdev"
+
+# SysClk LWLA1016
+ATTRS{idVendor}=="2961", ATTRS{idProduct}=="6688", MODE="664", GROUP="plugdev"
+
 # SysClk LWLA1034
 ATTRS{idVendor}=="2961", ATTRS{idProduct}=="6689", MODE="664", GROUP="plugdev"
+
+# Testo 435
+ATTRS{idVendor}=="128d", ATTRS{idProduct}=="0003", MODE="664", GROUP="plugdev"
 
 # UNI-T UT-D04 multimeter cable (for various UNI-T and rebranded DMMs)
 # http://sigrok.org/wiki/Device_cables#UNI-T_UT-D04

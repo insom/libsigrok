@@ -1,0 +1,196 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+#ifndef SR_CONFIG_H
+#define SR_CONFIG_H    /* To stop multiple inclusions. */
+
+/* Define if building universal (internal helper macro) */
+#undef AC_APPLE_UNIVERSAL_BUILD
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Agilent DMM support */
+#undef HAVE_HW_AGILENT_DMM
+
+/* APPA 55II support */
+#undef HAVE_HW_APPA_55II
+
+/* ASIX SIGMA/SIGMA2 support */
+#undef HAVE_HW_ASIX_SIGMA
+
+/* Atten PPS3xxx support */
+#undef HAVE_HW_ATTEN_PPS3XXX
+
+/* Brymen BM86X support */
+#undef HAVE_HW_BRYMEN_BM86X
+
+/* Brymen DMM support */
+#undef HAVE_HW_BRYMEN_DMM
+
+/* CEM DT-885x support */
+#undef HAVE_HW_CEM_DT_885X
+
+/* Center 3xx support */
+#undef HAVE_HW_CENTER_3XX
+
+/* ChronoVu LA support */
+#undef HAVE_HW_CHRONOVU_LA
+
+/* Colead SLM support */
+#undef HAVE_HW_COLEAD_SLM
+
+/* Conrad DIGI 35 CPU support */
+#undef HAVE_HW_CONRAD_DIGI_35_CPU
+
+/* Demo driver support */
+#undef HAVE_HW_DEMO
+
+/* Fluke DMM support */
+#undef HAVE_HW_FLUKE_DMM
+
+/* fx2lafw support */
+#undef HAVE_HW_FX2LAFW
+
+/* gmc-mh-1x-2x support */
+#undef HAVE_HW_GMC_MH_1X_2X
+
+/* Hameg HMO support */
+#undef HAVE_HW_HAMEG_HMO
+
+/* Hantek DSO support */
+#undef HAVE_HW_HANTEK_DSO
+
+/* IKALOGIC Scanalogic-2 support */
+#undef HAVE_HW_IKALOGIC_SCANALOGIC2
+
+/* IKALOGIC ScanaPLUS support */
+#undef HAVE_HW_IKALOGIC_SCANAPLUS
+
+/* Kecheng KC-330B support */
+#undef HAVE_HW_KECHENG_KC_330B
+
+/* Lascar EL-USB support */
+#undef HAVE_HW_LASCAR_EL_USB
+
+/* MIC 985xx support */
+#undef HAVE_HW_MIC_985XX
+
+/* Norma DMM support */
+#undef HAVE_HW_NORMA_DMM
+
+/* OpenBench Logic Sniffer (OLS) support */
+#undef HAVE_HW_OLS
+
+/* Rigol DS support */
+#undef HAVE_HW_RIGOL_DS
+
+/* Saleae Logic16 support */
+#undef HAVE_HW_SALEAE_LOGIC16
+
+/* Serial DMM support */
+#undef HAVE_HW_SERIAL_DMM
+
+/* Sysclk LWLA support */
+#undef HAVE_HW_SYSCLK_LWLA
+
+/* Teleinfo support */
+#undef HAVE_HW_TELEINFO
+
+/* Tondaj SL-814 support */
+#undef HAVE_HW_TONDAJ_SL_814
+
+/* UNI-T DMM support */
+#undef HAVE_HW_UNI_T_DMM
+
+/* UNI-T UT32x support */
+#undef HAVE_HW_UNI_T_UT32X
+
+/* Victor DMM support */
+#undef HAVE_HW_VICTOR_DMM
+
+/* ZEROPLUS Logic Cube support */
+#undef HAVE_HW_ZEROPLUS_LOGIC_CUBE
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Specifies whether we have librevisa. */
+#undef HAVE_LIBREVISA
+
+/* Specifies whether we have libserialport. */
+#undef HAVE_LIBSERIALPORT
+
+/* Specifies whether we have a libusb.h header. */
+#undef HAVE_LIBUSB_1_0
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Specifies whether we have RPC support. */
+#undef HAVE_RPC
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
+#undef LT_OBJDIR
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Version number of package */
+#undef VERSION
+
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+#  undef WORDS_BIGENDIAN
+# endif
+#endif
+
+#endif /* SR_CONFIG_H */

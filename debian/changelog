@@ -1,3 +1,12 @@
+libsigrok (0.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+    + API and ABI changed, so change package name to libsigrok3*.
+  * Standards-Version: 3.9.8 (no changes required).
+  * Build C++ library package, libsigrokcxx
+
+ -- Aaron Brady <aaron@insom.me.uk>  Sun, 11 Dec 2016 17:37:32 -0500
+
 libsigrok (0.3.0-1) unstable; urgency=medium
 
   * Acknowledge NMU, thanks David Prévot (Closes: #724126).

@@ -21,24 +21,25 @@
 #ifndef LIBSIGROK_TESTS_LIB_H
 #define LIBSIGROK_TESTS_LIB_H
 
-#include "../libsigrok.h"
+#include <libsigrok/libsigrok.h>
+
+#define ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
+
+extern struct sr_context *srtest_ctx;
+
+void srtest_setup(void);
+void srtest_teardown(void);
 
 struct sr_dev_driver *srtest_driver_get(const char *drivername);
-struct sr_input_format *srtest_input_get(const char *id);
-struct sr_output_format *srtest_output_get(const char *id);
 
 void srtest_driver_init(struct sr_context *sr_ctx, struct sr_dev_driver *driver);
 void srtest_driver_init_all(struct sr_context *sr_ctx);
-
-void srtest_input_init(struct sr_context *sr_ctx, struct sr_input_format *input);
-void srtest_input_init_all(struct sr_context *sr_ctx);
 
 void srtest_set_samplerate(struct sr_dev_driver *driver, uint64_t samplerate);
 uint64_t srtest_get_samplerate(struct sr_dev_driver *driver);
 void srtest_check_samplerate(struct sr_context *sr_ctx, const char *drivername,
 			     uint64_t samplerate);
 
-void srtest_buf_to_file(const char *filename, const uint8_t *buf, uint64_t len);
 GArray *srtest_get_enabled_logic_channels(const struct sr_dev_inst *sdi);
 
 Suite *suite_core(void);
@@ -46,7 +47,12 @@ Suite *suite_driver_all(void);
 Suite *suite_input_all(void);
 Suite *suite_input_binary(void);
 Suite *suite_output_all(void);
+Suite *suite_transform_all(void);
+Suite *suite_session(void);
 Suite *suite_strutil(void);
 Suite *suite_version(void);
+Suite *suite_device(void);
+Suite *suite_trigger(void);
+Suite *suite_analog(void);
 
 #endif

@@ -1,3 +1,10 @@
+libsigrok (0.4.0-2) unstable; urgency=medium
+
+  * Create a separate libsigrokcxx-dev package as per upstream suggestion.
+  * Change some version specifications to use subst vars.
+
+ -- Aaron Brady <aaron@insom.me.uk>  Sun, 19 Feb 2017 15:01:10 -0500
+
 libsigrok (0.4.0-1) unstable; urgency=medium
 
   * New upstream release.

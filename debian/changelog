@@ -1,3 +1,11 @@
+libsigrok (0.4.0-3) unstable; urgency=medium
+
+  * Make libsigrok-dev's .install more specific
+  * Change FTDI dependency to libftdi1-dev.
+  * Add dependency on libieee1284-3-dev.
+
+ -- Aaron Brady <aaron@insom.me.uk>  Mon, 20 Feb 2017 18:04:26 -0500
+
 libsigrok (0.4.0-2) unstable; urgency=medium
 
   * Create a separate libsigrokcxx-dev package as per upstream suggestion.
